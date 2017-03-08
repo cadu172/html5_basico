@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Estrutura Básica de um Documento HTML 5</title>
+	<style>
+		
+		/* inicializando CSS */
+		header, nav, section, aside, footer, article {display: block;}
+		
+		/* background do site */
+		#body_site
+		{
+			background-color: #F5F5F5;
+			font-family: Calibri, Arial, Times New Roman;
+			font-size: 12pt;
+			width: 900px;
+			margin: 2px auto;
+			padding: 5px;			
+		}
+		
+		header#header_site
+		{
+			background-color: #910000;
+			color: #FFFFFF;
+			font-family: Calibri;
+			font-weight: bold;
+			height: 90px;
+			width: 800px;
+			text-align: center;			
+		}
+		
+		section#conteudo_site
+		{
+			font-family: inherit;
+			background-color: #000000;
+			color: #FFFFFF;
+			float: left;
+			width: 500px;
+			height: 500px;
+		}
+		
+		nav#menu_principal #submenu_li li
+		{
+			list-style: none;
+			display: inline;
+			margin: 2px;
+			padding: 5px;
+			background-color: #C0C0C0;
+		}
+		
+		aside#menu_aside
+		{
+			float: left;
+			width: 250px;
+			height: 500px;
+			text-align: left;
+			background-color: #C0C0C0;
+		}
+		
+		footer#rodape_site
+		{
+			float: none;
+			width: 500px;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<div id="body_site">
+
+		<header id="header_site">
+			<h3>TITULO DO SITE</h3>
+		</header>
+		
+		<nav id="menu_principal">
+			<ul id="submenu_li">
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+			</ul>
+		</nav>
+
+		<section id="conteudo_site">
+			<b>SECTION</b><br />
+			Sessão onde incluímos o conteudo do site.<br /><br />
+			A <b>Section</b> pode ser sub-dividida em <b>HEADER - ARTICLE - FOOTER</b>
+		</section>
+
+		<aside id="menu_aside">
+			<b>ASIDE</b><br />
+			No ASIDE são incluídos os links relacionados com o seu conteúdo em volta.
+		</aside>
+
+		<footer id="rodape_site">
+			<b>Footer</b><br />
+			Rodapé da página com informações sobre o site, empresa, autores outros links etc....
+		</footer>
+	
+	</div>
+
+</body>
+</html>
